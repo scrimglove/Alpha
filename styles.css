@@ -4,19 +4,74 @@ Wrap the buttons in a flexbox div and center them.
 Give the div a "btn-wrapper" class.
 */
 
+body {
+	margin: 0;
+	font-family: Arial, sans serif;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+}
+
+#blu_btn {
+	width: 50;
+	display: block;
+	background: teal;
+	color: white;
+	border: none;
+    padding: 8px 20;
+    border-radius: 4px;
+	cursor: pointer;
+}
+
+.lnk1:hover {
+	text-decoration: underline;
+}
+
+.hlnk {
+	margin: 10;
+}
+
+.flnk{
+	padding: 0 20;
+	color: #777;
+}
+
+#clnk {
+	color: #777;
+}
+
 .main {
-    margin-top: 100px;    
+    margin-top: 140px;    
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.lhead {
+	justify-content: start;
+	padding: 10;
+}
+
+.rhead {
+	justify-content: end;
+	padding: 10;
 }
 
 .logo-img {
     display: block;
-    width: 300px;
+    width: 275px;
     margin: 0 auto 20px;
 }
 
 .search-input {
     display: block;
-    width: 400px;
+    width: 570px;
     margin: 0 auto;
     line-height: 24px;
     padding: 10px 30px;
@@ -36,7 +91,25 @@ Give the div a "btn-wrapper" class.
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
-    font-size: 14px;
-	font-family: arial;
 	cursor: pointer;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background: #f0f0f0;
+	margin: 330 0 0;
+}
+
+.lfoot {
+	justify-content: start;	
+}
+
+.cfoot {
+	justify-content: center;
+	margin: 0 0 0 -100;
+}
+
+.rfoot {
+	justify-content: end;
 }
